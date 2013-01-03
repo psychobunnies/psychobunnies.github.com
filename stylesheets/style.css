@@ -1,0 +1,206 @@
+/*
+ * Element: Body
+ * Has a tiled background image
+ */
+body {
+    background-image: url("../images/tile.png");
+    background-repeat: repeat-both;
+    font-size: 16pt;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: friday;
+    src: url("../fonts/Friday13v12.ttf");
+}
+
+h1 {
+    display: block;
+    font-family: friday;
+    font-size: 64px;
+    margin: 0px;
+    padding: 0px;
+    line-height: 80px;
+}
+
+span {
+    font-family: "courier", monospace;
+    font-size: 14px;
+}
+
+a.big-link {
+    font-size: 64px !important;
+    display: block;
+    font-family: friday;
+    margin: 0px;
+    padding: 0px 4px 0px 0px;
+    line-height: 80px;
+    text-decoration: none;
+    width: auto;
+    overflow: visible;
+    color: inherit;
+}
+
+a.big-link:hover {
+    color: #1A6AFF;
+}
+
+#psychobunnies {
+    position: absolute;
+    left: 64px;
+    top: 64px;
+}
+
+#title-sub {
+    position: absolute;
+    left: 256px;
+    top: 128px;
+}
+
+#download {
+    position: absolute;
+    right: 64px;
+    top: 320px;
+}
+
+#download-sub {
+    position: absolute;
+    right: 96px;
+    top: 384px;
+}
+
+#contact {
+    position: absolute;
+    left: 64px;
+    top: 672px;
+}
+
+#contact-sub {
+    position: absolute;
+    left: 128px;
+    top: 736px;
+}
+
+/*
+ * ID: container
+ * Container for all content on the page
+ */
+#container {
+    position: relative;
+    width: 1024px;
+    height: 896px;
+    margin: auto;
+}
+
+/*
+ * ID: left-iamge
+ * Image of spikes on left of screen. Stuck to left side.
+ */
+#left-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 32px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 1000;
+}
+/*
+ * ID: right-image
+ * Image of spikes on right of screen. Stuck to right side.
+ */
+#right-image {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 32px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    z-index: 1000;
+}
+/*
+ * ID: top-images
+ * Image of spikes on top of screen. Repeated background of spikes, attached to top of screen, offset from sides.
+ */
+#top-image {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    height: 32px;
+    z-index: 1000;
+}
+
+
+#bottom-image {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    height: 32px;
+    z-index: 1000;
+}
+
+#bottom-right-image {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: 1000;
+}
+
+#top-left-image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+}
+/*
+ * ID: title-image
+ * The title image on the top left. Absolutely positioned.
+ */
+#title-image {
+    position: relative;
+    left: 48px;
+    top: 32px;
+}
+/*
+ * ID: main-content-wrap
+ * The wrap main content on the page positioned below and to the right of the title.
+ */
+#main-content-wrap {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0% 8% 0% 8%;
+    margin: 0px;
+    /*left: 8%;*/
+    /*right: 8%;*/
+    background: rgba(250, 250, 250, 0.8);
+    border-top: 1px solid #111;
+    border-bottom: 1px solid #111;
+    width: 100%;
+}
+/*
+ * ID: top-stop
+ * moves the content of the page down 8%
+ */
+#top-stop {
+    height: 96px;
+    width: 100%;
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*
+ * ID: main-content
+ * The main content itself.
+ */
+#main-content {
+    /*max-width: 1200px;*/
+    /*width: 70%;*/
+    width: 700px;
+    margin: auto;
+}
